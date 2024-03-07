@@ -2,6 +2,7 @@ openapi: '3.0.2'
 info:
   title: icanhazdadjoke
   version: '1.0'
+  description: 'API for getting bad (dad) jokes on demand'
 servers:
   - url: https://icanhazdadjoke.com/
 paths:
