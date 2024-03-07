@@ -2,13 +2,35 @@ openapi: '3.0.2'
 info:
   title: "search"
   version: '1.0'
-  description: 'API for getting bad (dad) jokes on demand'
+  description: 'API for getting dad (bad) jokes on demand'
 servers:
   - url: https://icanhazdadjoke.com/
 paths:
   /search:
     get:
-      parameters: []
+      parameters: 
+        - in: query
+          name: page
+          schema: 
+            type: integer
+          required: false
+          description: Page of results to fetch (default = 1)
+        
+        - in: query
+          name: limit
+          schema: 
+            type: integer
+          required: false
+          description: Number of results to return per page
+          
+        - in: query
+          name: term
+          schema: 
+            type: string
+          required: false
+          description: Text to look for in jokes (default = list all)
+          
+         
       responses:
         "200":
           description: OK
