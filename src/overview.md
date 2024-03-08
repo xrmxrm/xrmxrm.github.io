@@ -28,6 +28,6 @@ The returned results from the above endpoints can be in the following formats:
 
 The API does not use authentication, but it requests that you use a `User-Agent` header. 
 
-The API recognizes several `Accept` headers and adjusts its responses formats accordingly. 
+The API recognizes several `Accept` headers and adjusts its response formats accordingly. 
 
 

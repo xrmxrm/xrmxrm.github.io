@@ -7,6 +7,7 @@ This procedure uses the `request` package, the most popular Python package for i
 The procedure uses the following Python program, which it assumes you have open in your Python development system:
 
 ```python
+"""Access the dad joke search endpoint"""
 import requests
 
 headers = {'User-Agent': '<my-url>', 'Accept':"application/json"}
