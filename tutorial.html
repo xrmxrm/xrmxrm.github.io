@@ -1,1 +1,48 @@
-Hello!
+<h1 id="how-to-access-the-dad-jokes-search-endpoint-using-python">How to
+    access the dad jokes <code>search</code> endpoint using Python</h1>
+    <p>This procedure uses the <code>request</code> package, the most
+    popular Python package for interacting with RESTful APIs like this one.
+    To install it on your Python system, use the following command at a
+    terminal prompt:</p>
+    <pre><code>pip install request</code></pre>
+    <p>The procedure uses the following Python program, which it assumes you
+    have open in your Python development system:</p>
+    <pre class="python"><code>import requests
+    
+    headers = {&#39;User-Agent&#39;: &#39;&lt;my-url&gt;&#39;, &#39;Accept&#39;:&quot;application/json&quot;}
+    
+    query_params = {&#39;page&#39;:1, &#39;limit&#39;:4, &#39;term&#39;:&quot;bike&quot;}
+    r = requests.get(&#39;https://icanhazdadjoke.com/search&#39;, headers=headers,  params=query_params)
+    
+    print(r.status_code)
+    print(r.json())</code></pre>
+    <p>To perform a dad joke search:</p>
+    <ol type="1">
+    <li><p>Edit the <code>headers</code> dictionary in the above code to
+    supply:</p>
+    <ul>
+    <li><p>Your own user agent. Ideally, this should include the name of the
+    library or website that is accessing the API and a URL or contact email
+    address. For example:</p>
+    <p><code>https://github.com/username/repo</code></p></li>
+    <li><p>An <code>Accept</code> header to specify the desired response
+    type. The allowed values are:</p>
+    <ul>
+    <li><code>text/html</code> – HTML (default)</li>
+    <li><code>application/json</code> – JSON</li>
+    <li><code>text/plain</code> – Plain text</li>
+    </ul></li>
+    </ul></li>
+    <li><p>Edit the <code>query_params</code> dictionary to set any query
+    parameters you wish to use. The available parameters are:</p>
+    <ul>
+    <li><p><code>page</code> – an integer specifying which page of results
+    to return (default = 1)</p></li>
+    <li><p><code>limit</code> – an integer specifying the number of results
+    to return from each page (default = 20; maximum = 30)</p></li>
+    <li><p><code>term</code> – a string specifying text that returned jokes
+    must contain (default = ’’, meaning return all jokes)</p></li>
+    </ul></li>
+    </ol>
+    <p>The above code prints the returned jokes. Modify it as you see fit to
+    use them in other ways.</p>

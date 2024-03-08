@@ -4,7 +4,7 @@ When you're in a certain mood, a dad joke can be just what you need. By providin
 
 * Makes dad jokes available in many high-stress environments.
 * Provides a great way to learn about RESTful APIs.
-* Give developers a simple but non-trivial test case for API-related software.
+* Gives developers a simple but non-trivial test case for API-related software.
 
 ## What the API provides
 
