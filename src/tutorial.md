@@ -24,7 +24,7 @@ If you run it you should see the following output:
     'results': [
         {'id': 'R7UfaahVfFd', 'joke': 'My dog used to chase people on a bike a lot. It got so bad I had to take his bike away.'}, 
         {'id': 'HtcNuHJBQCd', 'joke': "How many kids with ADD does it take to change a lightbulb? Let's go ride bikes!"}], 
-        'search_term': 'bike', 'status': 200, 'total_jokes': 2, 'total_pages': 1}
+    'search_term': 'bike', 'status': 200, 'total_jokes': 2, 'total_pages': 1}
 
 To perform a dad joke search:
 
