@@ -180,8 +180,6 @@
   <body>
   <h1>search</h1>
     <div class="app-desc">API for getting dad (bad) jokes on demand</div>
-    <div class="app-desc">More information: <a href="https://helloreverb.com">https://helloreverb.com</a></div>
-    <div class="app-desc">Contact Info: <a href="hello@helloreverb.com">hello@helloreverb.com</a></div>
     <div class="app-desc">Version: 1.0</div>
     <div class="app-desc">BasePath:/</div>
     <div class="license-info">All rights reserved</div>
@@ -221,15 +219,36 @@
             <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; Text to look for in jokes (default &#x3D; list all) </div>    </div>  <!-- field-items -->
 
 
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      array[<a href="#inline_response_200">inline_response_200</a>]
+      
+    </div>
 
     <!--Todo: process Response Object and its headers, schema, examples -->
 
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>[ {
+  "id" : 0,
+  "joke" : "joke"
+}, {
+  "id" : 0,
+  "joke" : "joke"
+} ]</code></pre>
 
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+      <li><code>text/plain</code></li>
+    </ul>
 
     <h3 class="field-label">Responses</h3>
     <h4 class="field-label">200</h4>
-    OK
-        <a href="#"></a>
+    OK (Always returns OK, even for an empty response)
+        
   </div> <!-- method -->
   <hr/>
 
@@ -238,7 +257,24 @@
 
   <h3>Table of Contents</h3>
   <ol>
+    <li><a href="#inline_response_200"><code>inline_response_200</code></a></li>
+    <li><a href="#inline_response_200_1"><code>inline_response_200_1</code></a></li>
   </ol>
 
+  <div class="model">
+    <h3><a name="inline_response_200"><code>inline_response_200</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">id (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span> Unique integer identifying the joke </div>
+<div class="param">joke (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Text of the joke </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="inline_response_200_1"><code>inline_response_200_1</code></a> <a class="up" href="#__Models">Up</a></h3>
+    
+    <div class="field-items">
+      <div class="param">joke (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Text of the joke </div>
+    </div>  <!-- field-items -->
+  </div>
   </body>
 </html>

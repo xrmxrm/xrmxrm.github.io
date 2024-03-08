@@ -10,28 +10,47 @@ paths:
     get:
       parameters: 
         - in: query
+          description: Page of results to fetch (default = 1)
           name: page
           schema: 
             type: integer
           required: false
-          description: Page of results to fetch (default = 1)
         
         - in: query
+          description: Number of results to return per page
           name: limit
           schema: 
             type: integer
           required: false
-          description: Number of results to return per page
           
         - in: query
+          description: Text to look for in jokes (default = list all)
           name: term
           schema: 
             type: string
           required: false
-          description: Text to look for in jokes (default = list all)
-          
-         
       responses:
         "200":
-          description: OK
+          description: OK (Always returns OK, even for an empty response)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    id:
+                      description: Unique integer identifying the joke
+                      type: integer
+                    joke:
+                      description: Text of the joke
+                      type: string
+          
+            text/plain:
+              schema:
+                type: array
+                items:
+                 properties:
+                  joke:
+                    description: Text of the joke
+                    type: string
         
