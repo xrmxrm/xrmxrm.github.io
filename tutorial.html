@@ -8,15 +8,15 @@
     <p>The procedure uses the following Python program, which it assumes you
     have open in your Python development system:</p>
     <pre class="python"><code>&quot;&quot;&quot;Access the dad joke search endpoint&quot;&quot;&quot;
-    import requests
+        import requests
     
-    headers = {&#39;User-Agent&#39;: &#39;&lt;my-url&gt;&#39;, &#39;Accept&#39;:&quot;application/json&quot;}
+        headers = {&#39;User-Agent&#39;: &#39;&lt;my-url&gt;&#39;, &#39;Accept&#39;:&quot;application/json&quot;}
     
-    query_params = {&#39;page&#39;:1, &#39;limit&#39;:4, &#39;term&#39;:&quot;bike&quot;}
-    r = requests.get(&#39;https://icanhazdadjoke.com/search&#39;, headers=headers,  params=query_params)
+        query_params = {&#39;page&#39;:1, &#39;limit&#39;:4, &#39;term&#39;:&quot;bike&quot;}
+        r = requests.get(&#39;https://icanhazdadjoke.com/search&#39;, headers=headers,  params=query_params)
     
-    print(r.status_code)
-    print(r.json())</code></pre>
+        print(r.status_code)
+        print(r.json())</code></pre>
     <p>If you run it you should see the following output:</p>
     <pre><code>200
     {&#39;current_page&#39;: 1, &#39;limit&#39;: 4, &#39;next_page&#39;: 1, &#39;previous_page&#39;: 1, 

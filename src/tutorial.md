@@ -8,15 +8,15 @@ The procedure uses the following Python program, which it assumes you have open 
 
 ```python
 """Access the dad joke search endpoint"""
-import requests
+    import requests
 
-headers = {'User-Agent': '<my-url>', 'Accept':"application/json"}
+    headers = {'User-Agent': '<my-url>', 'Accept':"application/json"}
 
-query_params = {'page':1, 'limit':4, 'term':"bike"}
-r = requests.get('https://icanhazdadjoke.com/search', headers=headers,  params=query_params)
+    query_params = {'page':1, 'limit':4, 'term':"bike"}
+    r = requests.get('https://icanhazdadjoke.com/search', headers=headers,  params=query_params)
 
-print(r.status_code)
-print(r.json())
+    print(r.status_code)
+    print(r.json())
 ```
 If you run it you should see the following output:
 
