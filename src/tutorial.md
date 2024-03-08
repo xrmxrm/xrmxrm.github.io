@@ -32,7 +32,7 @@ To perform a dad joke search:
 
 1. Edit the `headers` dictionary in the above code to supply:
 
-   * Your own user agent.
+   * Your own user agent to replace `<my-url>`.
      Ideally, this should include the name of the library or website that is accessing the API and a URL or contact email address. For example:
 
         ```
