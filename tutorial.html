@@ -16,6 +16,9 @@
     
     print(r.status_code)
     print(r.json())</code></pre>
+    <p>If you run it you should see the following output:</p>
+    <pre><code>200
+    {&#39;current_page&#39;: 1, &#39;limit&#39;: 4, &#39;next_page&#39;: 1, &#39;previous_page&#39;: 1, &#39;results&#39;: [{&#39;id&#39;: &#39;R7UfaahVfFd&#39;, &#39;joke&#39;: &#39;My dog used to chase people on a bike a lot. It got so bad I had to take his bike away.&#39;}, {&#39;id&#39;: &#39;HtcNuHJBQCd&#39;, &#39;joke&#39;: &quot;How many kids with ADD does it take to change a lightbulb? Let&#39;s go ride bikes!&quot;}], &#39;search_term&#39;: &#39;bike&#39;, &#39;status&#39;: 200, &#39;total_jokes&#39;: 2, &#39;total_pages&#39;: 1}</code></pre>
     <p>To perform a dad joke search:</p>
     <ol type="1">
     <li><p>Edit the <code>headers</code> dictionary in the above code to
