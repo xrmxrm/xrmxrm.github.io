@@ -33,7 +33,9 @@ To perform a dad joke search:
    * Your own user agent.
      Ideally, this should include the name of the library or website that is accessing the API and a URL or contact email address. For example:
 
-        ```https://github.com/username/repo```
+        ```
+            https://github.com/username/repo
+        ```
 
    * An `Accept` header to specify the desired response type. The allowed values are:
      
