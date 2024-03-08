@@ -1,1 +1,31 @@
-Hello!
+<h1 id="about-the-dad-joke-api">About the Dad Joke API</h1>
+<p>When you’re in a certain mood, a dad joke can be just what you need.
+By providing an API, <code>icanhazdadjoke.com</code>:</p>
+<ul>
+<li>Makes dad jokes available in many high-stress environments.</li>
+<li>Provides a great way to learn about RESTful APIs.</li>
+<li>Give developers a simple but non-trivial test case for API-related
+software.</li>
+</ul>
+<h2 id="what-the-api-provides">What the API provides</h2>
+<p>Using the API’s various endpoints, you can:</p>
+<ul>
+<li>Fetch a random dad joke.</li>
+<li>Fetch a specific dad joke.</li>
+<li>Search for dad jokes containing specified text.</li>
+<li>Search for dad jokes using a GraphQL query.</li>
+</ul>
+<h2 id="how-the-api-provides-jokes">How the API provides jokes</h2>
+<p>The returned results from the above endpoints can be in the following
+formats:</p>
+<ul>
+<li>Json.</li>
+<li>Plain text.</li>
+<li>Image (.png).</li>
+<li>Specific to an app like Slack.</li>
+</ul>
+<h2 id="details">Details</h2>
+<p>The API does not use authentication, but it requests that you use a
+<code>User-Agent</code> header.</p>
+<p>The API recognizes several <code>Accept</code> headers and adjusts
+its responses formats accordingly.</p>
